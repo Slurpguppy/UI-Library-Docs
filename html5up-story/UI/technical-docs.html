@@ -1,0 +1,327 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="library.css" />
+    <style>
+        html,
+body {
+  min-width: 290px;
+  color: #4d4e53;
+  background-color: #ffffff;
+  font-family: 'Open Sans', Arial, sans-serif;
+  line-height: 1.5;
+}
+
+#navbar {
+  position: fixed;
+  min-width: 290px;
+  top: 0px;
+  left: 0px;
+  width: 300px;
+  height: 100%;
+  border-right: solid;
+  border-color: rgba(0, 22, 22, 0.4);
+}
+
+header {
+  color: black;
+  margin: 10px;
+  text-align: center;
+  font-size: 1.8em;
+  font-weight: thin;
+}
+
+#main-doc header {
+  text-align: left;
+  margin: 0px;
+}
+
+#navbar ul {
+  height: 88%;
+  padding: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+#navbar li {
+  color: #4d4e53;
+  border-top: 1px solid;
+  list-style: none;
+  position: relative;
+  width: 100%;
+}
+
+#navbar a {
+  display: block;
+  padding: 10px 30px;
+  color: #4d4e53;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#main-doc {
+  position: absolute;
+  margin-left: 310px;
+  padding: 20px;
+  margin-bottom: 110px;
+}
+
+section article {
+  color: #4d4e53;
+  margin: 15px;
+  font-size: 0.96em;
+}
+
+section li {
+  margin: 15px 0px 0px 20px;
+}
+
+code {
+  display: block;
+  text-align: left;
+  white-space: pre-line;
+  position: relative;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 2;
+  background-color: #f7f7f7;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+@media only screen and (max-width: 815px) {
+  /* For mobile phones: */
+  #navbar ul {
+    border: 1px solid;
+    height: 207px;
+  }
+
+  #navbar {
+    background-color: white;
+    position: absolute;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-height: 275px;
+    border: none;
+    z-index: 1;
+    border-bottom: 2px solid;
+  }
+
+  #main-doc {
+    position: relative;
+    margin-left: 0px;
+    margin-top: 270px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  #main-doc {
+    margin-left: -10px;
+  }
+
+  code {
+    margin-left: -20px;
+    width: 100%;
+    padding: 15px;
+    padding-left: 10px;
+    padding-right: 45px;
+    min-width: 233px;
+  }
+}
+    </style>
+  </head>
+  <body>
+    <nav id="navbar">
+      <header>WLR <strong style="color: #007bff;">UI Library</strong>.</header>
+      <ul>
+        <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+        <li>
+          <a class="nav-link" href="#What_you_should_already_know"
+            >How it works</a
+          >
+        </li>
+        <li>
+          <a class="nav-link" href="#JavaScript_and_Java"
+            >Sizes</a
+          >
+        </li>
+        <li><a class="nav-link" href="#Hello_world">Variants</a></li>
+        <li><a class="nav-link" href="#Variables">Effects</a></li>
+        <li>
+          <a class="nav-link" href="#Declaring_variables"
+            >Customizing</a
+          >
+        </li>
+       
+        <li><a class="nav-link" href="#Reference">Reference</a></li>
+      </ul>
+    </nav>
+    <main id="main-doc">
+      <section class="main-section" id="Introduction">
+        <header>Introduction</header>
+        <article>
+          <p>
+            WLR UI Library is a custom UI library designed for creating styled buttons in web projects. It provides a variety of button sizes, states, and visual effects to enhance user interfaces. With WLR UI Library, developers can easily implement buttons with different styles by applying predefined classes. These include options for varying button sizes such as small, medium, and large, as well as effects like scaling, rotation, shadow, and transformation. The library's core functionality relies on a simple base class for buttons, and additional features are introduced through customizable classes, making it easy to integrate into any project. WLR UI Library is accessible via a CDN, allowing developers to quickly add its functionality to their web applications.
+          </p>
+
+            <li>
+              Button Effects: The library offers several effects that can be added to buttons, such as scaling, rotating, shadow, and transformation effects, achieved by adding specific classes to buttons.
+            </li>
+            
+            <li>Responsive Design: WLR UI Library is designed to be responsive, with CSS that adapts the layout of the navigation and main content area based on the screen size, making it mobile-friendly.</li>
+            <li>
+              Flexible Button Sizing: Buttons can be adjusted to different sizes (e.g., x-small, small, medium, large) by applying size-specific classes, providing flexibility in UI design.
+            </li>
+          </ul>
+        </br>
+        </article>
+      </section>
+      <section class="main-section" id="What_you_should_already_know">
+        <header>How it works</header>
+        <article>
+          <p><strong>Accsess via CDN</strong></p>
+        </br>
+              <p>Add this to the head of your HTML document.</p>
+           <code style="font-size: larger;"
+              >link rel="stylesheet" href="library.css"
+            </code>
+          </br>
+        </article>
+      </section>
+      <section class="main-section" id="JavaScript_and_Java">
+        <header>Base class</header>
+        <article>
+          <p><strong>Making a button</strong></p>
+        </br>
+              <p>WLR UI Library has a base .btn class that sets up basic styles such as padding and content alignment. By default, .btn controls have a transparent border and background color, and lack any explicit focus and hover styles.</p>
+            <code
+              >&lt;button class="btn"&gt;&lt;/button&gt;
+            </code>
+  </li>
+            <p>
+              Any button must have the class "btn".
+            </p>
+          </ul>
+        </br>
+        </article>
+      </section>
+      <section class="main-section" id="Hello_world">
+        <header>Sizes</header>
+        <article>
+          <p>
+            Diffrent button sizes
+          </p>
+        </br>
+          <p>
+            <button class="btn btn-xsm">X-Small Button</button>
+            <button class="btn btn-sm">Small Button</button>
+            <button class="btn btn-md">Medium Button</button>
+            <button class="btn btn-lg">Large Button</button>
+            <button class="btn btn-xlg">X-Large Button</button>
+          </p>
+        </br>
+          <p>
+            To change the size of a button, you need to add a size class.
+          </p>
+            <p>Size classes are</p>
+            <ul>
+              <li><strong>btn-xsm</strong></li>
+              <li><strong>btn-sm</strong></li>
+              <li><strong>btn-md</strong></li>
+              <li><strong>btn-lg</strong></li>
+              <li><strong>btn-xlg</strong></li>
+            </ul>
+            
+            <p>
+              Size class small example
+            </p>
+            <code
+              >&lt;button class="btn btn-sm"&gt;Small Button&lt;/button&gt;
+            </code>
+            <p>
+              Makes...
+            </p>
+            <button class="btn btn-sm">Small Button</button>
+  </li> </br>
+            
+          </ul>
+        </br> </br>
+        </article>
+      </section>
+      <section class="main-section" id="Variables">
+        <header>Effects</header>
+        <p>
+          Adding effects to buttons
+        </p>
+      </br>
+        <p>
+          <button class="btn btn-lg btn-transform">Transform</button>
+          <button class="btn btn-lg btn-scale">Scale</button>
+          <button class="btn btn-lg btn-shadow">Shadow</button>
+          <button class="btn btn-lg btn-rotate">Rotate</button>
+          <button class="btn btn-lg btn-underline-border">Border</button>
+          <button class="btn btn-lg btn-fill-color">Fill</button>
+        </p>
+      </br>
+        <p>
+          You can add a button effect by adding a <strong>effect class</strong>.
+        </p>
+        <p>The effect classes are</p>
+        <ul>
+          <li><strong>btn-transform</strong></li>
+          <li><strong>btn-scale</strong></li>
+          <li><strong>btn-shadow</strong></li>
+          <li><strong>btn-rotate</strong></li>
+          <li><strong>underline-border</strong></li>
+          <li><strong>btn-fill-color</strong></li>
+        </ul>        
+        <code
+              >&lt;button class="btn btn-lg btn-scale"&gt;Button&lt;/button&gt;
+            </code>
+            <p>
+              Makes...
+            </p>
+            <button class="btn btn-lg btn-scale">Scale</button>
+            <p>This will add the <strong>.scale</strong> effect.</p>
+      </section>
+    </br>
+      <section class="main-section" id="Declaring_variables">
+        <header>Customizing</header>
+        <article>
+          You can further customize a button by adding inline CSS.
+
+        </br></br>
+
+
+           <code>&lt;button class=&quot;btn btn-xlg&quot; style=&quot;background: rgb(255, 38, 38);&quot;&gt;Button&lt;/button&gt;
+          </code>
+           
+           Makes...
+          </br></br>
+           <button class="btn btn-xlg" style="background: rgb(255, 38, 38);">Button</button>
+            
+        </article>
+      </section>
+      
+      <section class="main-section" id="Reference">
+        <header>Reference</header>
+        <article>
+          <ul>
+            <li>
+              All the documentation in this page is taken from
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide"
+                target="_blank"
+                >MDN</a
+              >
+            </li>
+          </ul>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
