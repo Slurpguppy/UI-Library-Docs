@@ -14,7 +14,7 @@
 /* Style for the popup content */
 .onload-content {
     position: relative;
-    background: #171717;
+    background: #ffffff;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -22,7 +22,7 @@
     font-size: large;
     width: 600px;
     height: 400px;
-    color: #e8e8e8;
+    color: #282828;
 }
 
 /* Close button */
@@ -34,11 +34,11 @@
     font-weight: bold;
     cursor: pointer;
     color: #e8e8e8;
-    background: #8d2d2d;
+    background: #2469ff;
     padding: 20px;
     border-radius: 10px;
 }
 
 .closeonload:hover {
-    background: #8d2d2d5b;
+    background: #2469ff5a;
 }

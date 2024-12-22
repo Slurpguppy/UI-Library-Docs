@@ -142,14 +142,14 @@
       <div class="onload-content">
           <span id="closeonload" class="closeonload">Start</span>
           <h2>👋 Welcome!</h2>
-          <p>This is a web based, inline code editor built for web development.</p>
-          <p>Build whatever you like using HTML, CSS and JavaScript.</p>
+          <p>This is a simple CSS button library i built as a project for my</br> portfolio, similer to Bootstrap.</p>
+          
       </br>
-          <p>Currently, only inline is supported.</p>
+          <p>Feel free to try it out!</p>
       </div>
     </div>
     <nav id="navbar">
-      <header>WLR <strong style="color: #007bff;">UI Library</strong></header>
+      <header>WLR <strong style="color: #007bff;">Button Library</strong></header>
       <ul>
         <li><a class="nav-link" href="#Introduction">Introduction</a></li>
         <li><a class="nav-link" href="#What_you_should_already_know">How it works</a></li>
@@ -167,12 +167,12 @@
         <header>Introduction</header>
         <article>
           <p>
-            WLR UI Library is a custom UI library designed to help developers create styled buttons for web projects. It offers various button sizes, states, and visual effects to enhance user interfaces. Developers can easily apply predefined classes to create buttons with different styles, including small, medium, and large sizes, as well as effects like scaling, rotation, shadow, and transformation. The library is built around a simple base class for buttons, and additional features are introduced through customizable classes, making it easy to integrate into any project. WLR UI Library is available via a CDN, enabling quick setup in web applications.
+            WLR Button Library is a custom Button library designed to help developers create styled buttons for web projects. It offers various button sizes, states, and visual effects to enhance user interfaces. Developers can easily apply predefined classes to create buttons with different styles, including small, medium, and large sizes, as well as effects like scaling, rotation, shadow, and transformation. The library is built around a simple base class for buttons, and additional features are introduced through customizable classes, making it easy to integrate into any project. WLR Button Library is available via a CDN, enabling quick setup in web applications.
           </p>
           <ul>
             <li><strong>Button Effects:</strong> Several effects can be added to buttons, such as scaling, rotating, shadow, and transformation effects.</li>
             <li><strong>Responsive Design:</strong> The library adapts the layout of the navigation and content area for mobile devices, ensuring a mobile-friendly experience.</li>
-            <li><strong>Flexible Button Sizing:</strong> Buttons can be resized by applying size-specific classes, offering flexibility in UI design.</li>
+            <li><strong>Flexible Button Sizing:</strong> Buttons can be resized by applying size-specific classes, offering flexibility in Button design.</li>
           </ul>
         </article>
       </section>
@@ -190,7 +190,7 @@
         <header>Base Class</header>
         <article>
           <p><strong>Creating a Button:</strong></p>
-          <p>The WLR UI Library provides a base class called .btn, which applies basic styles such as padding and content alignment. By default, .btn elements have a transparent border and background, with no hover or focus styles applied.</p>
+          <p>The WLR Button Library provides a base class called .btn, which applies basic styles such as padding and content alignment. By default, .btn elements have a transparent border and background, with no hover or focus styles applied.</p>
           <code>&lt;button class="btn"&gt;&lt;/button&gt;</code>
           <p>All buttons must include the class "btn" to work properly.</p>
         </article>
@@ -258,88 +258,93 @@
  
 <p>Types:</p>
 
-<div style="border: 1px solid #000; padding: 10px; margin-bottom: 10px;">
+<div style="border: 2px solid #0000002c; padding: 10px; margin-bottom: 10px;">
+  <button class="btn btn-lg">Default </button>
+  <pre><code>&lt;button class="btn btn-icon"&gt;&lt;i class="fa fa-search"&gt;&lt;/i&gt; Search&lt;/button&gt;</code></pre>
+</div>
+
+<div style="border: 2px solid #0000002c; padding: 10px; margin-bottom: 10px;">
     <button class="btn btn-icon"><i class="fa fa-search"></i> Search</button>
     <pre><code>&lt;button class="btn btn-icon"&gt;&lt;i class="fa fa-search"&gt;&lt;/i&gt; Search&lt;/button&gt;</code></pre>
 </div>
 
-<div style="border: 1px solid #000; padding: 10px; margin-bottom: 10px;">
+<div style="border: 2px solid #0000002c; padding: 10px; margin-bottom: 10px;">
     <button class="btn btn-icon-only"><i class="fa fa-search"></i></button>
     <pre><code>&lt;button class="btn btn-icon-only"&gt;&lt;i class="fa fa-search"&gt;&lt;/i&gt;&lt;/button&gt;</code></pre>
 </div>
 
 <!-- Block Button -->
-<div style="border: 1px solid #000; padding: 10px; margin-bottom: 10px;">
+<div style="border: 2px solid #0000002c; padding: 10px; margin-bottom: 10px;">
     <button class="btn btn-block btn-lg">Full Width Button</button>
     <pre><code>&lt;button class="btn btn-block btn-lg"&gt;Full Width Button&lt;/button&gt;</code></pre>
 </div>
 
-<div style="border: 1px solid #000; padding: 10px; margin-bottom: 10px;">
+<div style="border: 2px solid #0000002c; padding: 10px; margin-bottom: 10px;">
     <button class="btn btn-outline btn-lg">Outline Button</button>
     <pre><code>&lt;button class="btn btn-outline btn-lg"&gt;Outline Button&lt;/button&gt;</code></pre>
 </div>
 
-<div style="border: 1px solid #000; padding: 10px; margin-bottom: 10px;">
+<div style="border: 2px solid #0000002c; padding: 10px; margin-bottom: 10px;">
     <button class="btn btn-disabled btn-lg" disabled>Disabled Button</button>
     <pre><code>&lt;button class="btn btn-disabled btn-lg" disabled&gt;Disabled Button&lt;/button&gt;</code></pre>
 </div>
 
 <p>Sizes:</p>
 
-<div style="border: 1px solid #000; padding: 10px; margin-bottom: 10px;">
+<div style="border: 2px solid #0000002c; padding: 10px; margin-bottom: 10px;">
     <button class="btn btn-xsm">Extra Small Button</button>
     <pre><code>&lt;button class="btn btn-xsm"&gt;Extra Small Button&lt;/button&gt;</code></pre>
 </div>
 
-<div style="border: 1px solid #000; padding: 10px; margin-bottom: 10px;">
+<div style="border: 2px solid #0000002c; padding: 10px; margin-bottom: 10px;">
     <button class="btn btn-sm">Small Button</button>
     <pre><code>&lt;button class="btn btn-sm"&gt;Small Button&lt;/button&gt;</code></pre>
 </div>
 
-<div style="border: 1px solid #000; padding: 10px; margin-bottom: 10px;">
+<div style="border: 2px solid #0000002c; padding: 10px; margin-bottom: 10px;">
     <button class="btn btn-md">Medium Button</button>
     <pre><code>&lt;button class="btn btn-md"&gt;Medium Button&lt;/button&gt;</code></pre>
 </div>
 
-<div style="border: 1px solid #000; padding: 10px; margin-bottom: 10px;">
+<div style="border: 2px solid #0000002c; padding: 10px; margin-bottom: 10px;">
     <button class="btn btn-lg">Large Button</button>
     <pre><code>&lt;button class="btn btn-lg"&gt;Large Button&lt;/button&gt;</code></pre>
 </div>
 
-<div style="border: 1px solid #000; padding: 10px; margin-bottom: 10px;">
+<div style="border: 2px solid #0000002c; padding: 10px; margin-bottom: 10px;">
     <button class="btn btn-xlg">X-Large Button</button>
     <pre><code>&lt;button class="btn btn-xlg"&gt;Extra Large Button&lt;/button&gt;</code></pre>
 </div>
 
 <p>Effects:</p>
 
-<div style="border: 1px solid #000; padding: 10px; margin-bottom: 10px;">
-  <button class="btn btn-lg btn-transform">Button</button>
+<div style="border: 2px solid #0000002c; padding: 10px; margin-bottom: 10px;">
+  <button class="btn btn-lg btn-transform">Transform</button>
   <pre><code>&lt;button class="btn btn-xsm"&gt;Extra Small Button&lt;/button&gt;</code></pre>
 </div>
 
-<div style="border: 1px solid #000; padding: 10px; margin-bottom: 10px;">
-  <button class="btn btn-lg btn-scale">Button</button>
+<div style="border: 2px solid #0000002c; padding: 10px; margin-bottom: 10px;">
+  <button class="btn btn-lg btn-scale">Scale</button>
   <pre><code>&lt;button class="btn btn-sm"&gt;Small Button&lt;/button&gt;</code></pre>
 </div>
 
-<div style="border: 1px solid #000; padding: 10px; margin-bottom: 10px;">
-  <button class="btn btn-lg btn-shadow">Button</button>
+<div style="border: 2px solid #0000002c; padding: 10px; margin-bottom: 10px;">
+  <button class="btn btn-lg btn-shadow">Shadow</button>
   <pre><code>&lt;button class="btn btn-md"&gt;Medium Button&lt;/button&gt;</code></pre>
 </div>
 
-<div style="border: 1px solid #000; padding: 10px; margin-bottom: 10px;">
-  <button class="btn btn-lg btn-underline-border">Button</button>
+<div style="border: 2px solid #0000002c; padding: 10px; margin-bottom: 10px;">
+  <button class="btn btn-lg btn-underline-border">Underline</button>
   <pre><code>&lt;button class="btn btn-lg"&gt;Large Button&lt;/button&gt;</code></pre>
 </div>
 
-<div style="border: 1px solid #000; padding: 10px; margin-bottom: 10px;">
-  <button class="btn btn-lg btn-rotate">Button</button>
+<div style="border: 2px solid #0000002c; padding: 10px; margin-bottom: 10px;">
+  <button class="btn btn-lg btn-rotate">Rotate</button>
   <pre><code>&lt;button class="btn btn-xlg"&gt;Extra Large Button&lt;/button&gt;</code></pre>
 </div>
 
-<div style="border: 1px solid #000; padding: 10px; margin-bottom: 10px;">
-  <button class="btn btn-lg btn-fill-color">Button</button>
+<div style="border: 2px solid #0000002c; padding: 10px; margin-bottom: 10px;">
+  <button class="btn btn-lg btn-fill-color">Fill</button>
   <pre><code>&lt;button class="btn btn-xlg"&gt;Extra Large Button&lt;/button&gt;</code></pre>
 </div>
 
